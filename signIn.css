@@ -1,0 +1,80 @@
+.signIn {
+    padding: 50px 0;
+    background-color: var(--sectionBackground)
+}
+
+.signIn p {
+    margin: 15px 0 55px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.signIn .content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.signIn .content form {
+    width: 500px;
+    background-color: white;
+    padding: 20PX;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 8px;
+    position: relative;
+}
+
+@media (max-width:767px) {
+    .signIn .content form {
+        margin: 0 auto;
+    }
+}
+
+.signIn .content form input:not([type="submit"]) {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid var(--mainColor);
+}
+
+.signIn .content form ::placeholder {
+    font-size: 20px;
+}
+
+.signIn .content form input[type="submit"] {
+    margin: 15px auto;
+    display: block;
+    padding: 10px 25px;
+    background-color: var(--mainColor);
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.5s background-color;
+}
+
+.signIn .content form input[type="submit"]:hover {
+    background-color: var(--altColor);
+}
+
+.signIn .content form a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.signIn .content img {
+    max-width: 450px;
+    height: 250px;
+    border-radius: 15px;
+}
+
+@media (max-width:767px) {
+    .signIn .content img {
+        display: none;
+    }
+}

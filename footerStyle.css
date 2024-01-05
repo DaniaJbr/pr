@@ -1,0 +1,21 @@
+footer{
+    background-color: var(--altColor);
+    display: flex;
+    align-items: center;
+    padding: 40px;
+}
+@media (max-width:767px){
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+footer img{
+    width: 100px;
+    margin-left: 80px;
+}
+@media (max-width:767px){
+    footer img{
+        margin-left: 0px;
+    }
+}

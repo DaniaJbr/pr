@@ -1,0 +1,118 @@
+header{
+    background-color: white;
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: space-between;
+}
+@media (max-width:767px){
+     header .container{
+        flex-direction: column-reverse;
+    }
+}
+header ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 80px - 50px);
+}
+@media (max-width:767px){
+    header ul{
+        width: 100%;
+    }
+}
+header ul li{
+    background-color:var(--mainColor) ;
+    padding: 7px 15px;
+    border-bottom-right-radius:40px ;
+    border-top-left-radius:40px ;
+    position: relative;
+    z-index: 0;
+    width: 25%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc((100% / 4) - 9px); /*12px space*/
+}
+@media (max-width:767px){
+    header ul li{
+        padding: 5px;
+        font-size: 13px;
+        border-radius: 10px;
+        width: calc((100% / 4) - 6px); /*8px space*/
+    }
+    header ul li i{
+        display: none;
+    }
+}
+header ul li::before{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0%;
+    height: 0%;
+    background-color: var(--altColor);
+    border-bottom-right-radius:40px ;
+    border-top-left-radius:40px ;
+    transition: all 0.5s;
+    z-index: -1;
+}
+@media(max-width:767px){
+    header ul li::before{
+        border-radius: 10px;
+    }
+}
+header ul li:hover:before{
+    width: 100%;
+    height: 100%;
+}
+header ul li a{
+    text-decoration: none;
+    color: black;
+    margin-right: 10px;
+}
+@media(max-width:767px){
+    header ul li a{
+        margin-right: 5px;
+    }
+}
+header ul li button{
+    background-color: transparent;
+    border: none;
+    margin-right: 10px;
+}
+ header ul li .list{
+    width: fit-content;
+} 
+header ul li .list span{
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: black;
+    margin-bottom: 6px;
+}
+@media (max-width:767px){
+    header ul li .list span{
+        width:20px;
+    }
+}
+header ul li .list span:not(:first-child):not(:last-child){
+    width:10px;
+    transition: width 0.5s;
+}
+header ul li:hover .list span:not(:first-child):not(:last-child){
+    width: 30px;
+}
+@media (max-width:767px){
+    header ul li:hover .list span:not(:first-child):not(:last-child){
+        width:20px;
+    }
+}
+header img{
+    width: 80px;
+    height: 80px;   
+}

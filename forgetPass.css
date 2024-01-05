@@ -1,0 +1,61 @@
+.forgetaPassword {
+    padding: 50px 0;
+    background-color: var(--sectionBackground)
+}
+
+.forgetaPassword p {
+    margin: 15px 0 55px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.forgetaPassword .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.forgetaPassword .content form {
+    width: 500px;
+    background-color: white;
+    padding: 20PX;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 50px;
+    position: relative;
+}
+
+@media (max-width:767px) {
+    .forgetaPassword .content form {
+        margin: 0 auto;
+    }
+}
+
+.forgetaPassword .content form input[type="email"] {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 2px solid var(--mainColor);
+}
+
+.forgetaPassword .content form ::placeholder {
+    font-size: 20px;
+}
+
+.forgetaPassword .content form input[type="submit"]
+ {
+    width: 20%;
+    margin: 15px auto;
+    padding: 10px 25px;
+    background-color: var(--mainColor);
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.5s background-color;
+}
+
+.forgetaPassword .content form input[type="submit"]:hover {
+    background-color: var(--altColor);
+}
+

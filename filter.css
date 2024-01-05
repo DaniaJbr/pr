@@ -1,0 +1,95 @@
+
+.content p{
+    margin: 15px ;
+    font-size: 18px;
+}
+@media (max-width:767px){
+    .content p{
+       font-size: 15px;          
+}}
+.content .container {
+    background-color: var(--sectionBackground);
+}
+.content .container .select{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;  
+}
+@media (max-width:767px){
+    .content .container .select{
+       margin: 0 auto;          
+}}
+.content .container .select .item{
+    background-color:var(--mainColor ) ;
+    padding: 7px 15px;
+    border-radius:60px ;
+    width: 40%;
+    margin:  15px;
+    text-align: center; 
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 992px) {
+  .content .container .select .item{
+    width: 80%;
+    height: auto;
+    margin-bottom: 30px; 
+}}
+
+.content .container .select .item ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    
+}
+
+
+
+  select {
+    background-color: transparent;
+    border: none;
+    padding: 0 1px 0 0;
+    margin: 0;
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: inherit;
+    line-height: inherit;
+    z-index: 1;
+    outline: none;
+    position: relative;
+  }
+  
+  .content .container .select .item .Seloption {
+    display: grid;
+    grid-template-areas: "select";
+    align-items: center;
+    position: relative;
+    width: 50%;
+    border: 1px solid var(--select-border);
+    border-radius: 10px;
+    padding: 5px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: var(--select);   
+  }
+ 
+
+.content .container button{
+        margin: 15px auto;
+        display: block;
+        font-weight: bold;
+        padding: 10px 25px;
+        background-color: var(--mainColor);
+        border: none;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .content .container button:hover{
+        background-color: var(--altColor);
+    }  
+
+
+
